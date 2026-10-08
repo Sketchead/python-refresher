@@ -1,11 +1,12 @@
 from Enemy import *
 
-enemy = Enemy("Zombie", 100, 10)
+zombie = Enemy("Zombie", 100, 10)
+goblin = Enemy("Goblin", 60, 15)
 
-enemy.talk()
-enemy.walk_forward()
-enemy.attack()
+zombie.talk()
+zombie.walk_forward()
+zombie.attack()
 
-print(f"Type of Enemy: {enemy.get_type_of_enemy()} ")
-print(f"Health Points: {enemy.health_points} ")
-print(f"Attack Damage: {enemy.attack_damage} ")
+print(f"Type of Enemy: {zombie.get_type_of_enemy()} ")
+print(f"Health Points: {zombie.health_points} ")
+print(f"Attack Damage: {zombie.attack_damage} ")
