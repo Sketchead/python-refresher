@@ -1,4 +1,4 @@
-
+from Enemy import *
 class Zombie(Enemy):
 
     def __init__(self, health_points: int = 100, attack_damage: int = 10):

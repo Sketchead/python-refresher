@@ -1,12 +1,11 @@
-from Enemy import *
+from Zombie import *
+from Ogre import *
 
-zombie = Enemy("Zombie", 100, 10)
-goblin = Enemy("Goblin", 60, 15)
+zombie = Zombie(100, 10)
+ogre = Ogre(150, 20)
 
-zombie.talk()
-zombie.walk_forward()
-zombie.attack()
+zombie.spread_disease()
+ogre.talk()
 
-print(f"Type of Enemy: {zombie.get_type_of_enemy()} ")
-print(f"Health Points: {zombie.health_points} ")
-print(f"Attack Damage: {zombie.attack_damage} ")
+print(f'{zombie.get_type_of_enemy()} has {zombie.health_points} health points and {zombie.attack_damage} attack damage.')
+print(f'{ogre.get_type_of_enemy()} has {ogre.health_points} health points and {ogre.attack_damage} attack damage.')
